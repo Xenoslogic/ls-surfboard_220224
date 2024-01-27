@@ -1,0 +1,14 @@
+@mixin inherit_menu {
+  width: 100%;
+  background-color: $blue;
+  padding: 26px 30px;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+
+}

@@ -1,0 +1,45 @@
+.contacts {
+
+  &--footer {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+
+  }
+
+  &__address {
+    font-size: 21px;
+  }
+
+  &__phone-icon {
+    flex-shrink: 0;
+
+    &-img {
+      width: 18px;
+      height: 18px;
+      margin-right: 6px;
+      fill: white;
+
+      &--black {
+        fill: black;
+      }
+    }
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+
+    &-number {
+      flex: 1;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      white-space: nowrap;
+
+      &--footer {
+        font-weight: normal;
+      }
+    }
+  }
+}

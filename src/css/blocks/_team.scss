@@ -1,0 +1,71 @@
+.team--version--desktop {
+  display: flex;
+  justify-content: space-between;
+
+
+
+  .team__content {
+    position: absolute;
+    top: 100%;
+  }
+}
+
+.team-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team--version--mobile {
+  display: none;
+
+
+}
+
+.team {
+  &-title {
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    text-align: center;
+    position: relative;
+    width: 220px;
+  }
+
+  &__member {
+    margin-bottom: 21px;
+  }
+
+  &__title {
+    font-size: 21px;
+    font-weight: bold;
+    position: relative;
+
+    &::after {
+      content: url("../../img/team/rev_triangle.png");
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin-left: 4px;
+      position: absolute;
+      top: -2px;
+    }
+
+    &.active::after {
+      transform: rotate(180deg) translateY(-5px);
+      transition: all .3s;
+    }
+  }
+
+  &__content {
+    overflow: hidden;
+    height: 0;
+    transition: height .3s;
+  }
+
+  &__position {
+    color: black;
+
+  }
+}
