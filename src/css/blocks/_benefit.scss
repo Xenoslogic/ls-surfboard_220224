@@ -5,6 +5,10 @@
 .benefit {
   text-align: center;
 
+  &__image {
+    margin-bottom: 10px;
+  }
+
   &__image-wrapper {
     display: inline-block;
     width: 126px;
@@ -13,7 +17,6 @@
     background: $grey;
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 10px;
 
   }
 
