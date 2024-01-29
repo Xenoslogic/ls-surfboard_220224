@@ -714,7 +714,7 @@ img {
   outline: none;
 }
 .form__input--textarea {
-  width: 450px;
+  width: 100%;
   height: 160px;
   resize: none;
 }
