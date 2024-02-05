@@ -20,6 +20,8 @@ $modal-bg: #333537;
 
 // z-index
 $z-fixed-menu: 20;
+$z-hamburger: 30;
+$z-overlay: 10;
 
 @import "./media";
 
@@ -31,6 +33,7 @@ $z-fixed-menu: 20;
 @import "./blocks/_hero.scss";
 @import "./blocks/_header.scss";
 @import "./blocks/_logo.scss";
+@import "./blocks/hamburger";
 @import "./blocks/_menu.scss";
 @import "./blocks/_btn.scss";
 @import "./blocks/_contacts.scss";
@@ -45,6 +48,12 @@ $z-fixed-menu: 20;
 @import "./blocks/_benefit.scss";
 @import "./blocks/_reviews.scss";
 @import "./blocks/_interactive-avatar.scss";
+@import "./blocks/products_menu.scss";
 @import "./blocks/_order.scss";
 @import "./blocks/_form.scss";
 @import "./blocks/_fixed-menu.scss";
+@import "./blocks/_map.scss";
+@import "./blocks/_footer.scss";
+@import "./blocks/_socials.scss";
+@import "./blocks/_overlay.scss";
+@import "./blocks/_modal.scss";

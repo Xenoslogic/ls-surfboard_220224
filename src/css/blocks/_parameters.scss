@@ -5,7 +5,11 @@
 .parameters {
   position: relative;
   display: inline-block;
-  max-height: 180px;
+  max-height: rem(180px);
+
+  @include tablets {
+    display: none;
+  }
 
   &:hover .parameters__menu {
     left: 0;
@@ -13,15 +17,15 @@
   }
 
   &__arrows {
-    width: 38px;
-    height: 38px;
+    width: rem(38px);
+    height: rem(38px);
   }
 
   &__title {
     color: white;
     text-transform: uppercase;
-    font-size: 14px;
-    margin-top: 8px;
+    font-size: rem(14px);
+    margin-top: rem(8px);
   }
 
   &__link {
@@ -43,23 +47,23 @@
     position: absolute;
     background: rgba(255, 255, 255, 0.80);
     box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 0.06);
-    padding: 28px 30px;
-    width: 290px;
-    left: -9999px;
+    padding: rem(28px) rem(30px);
+    width: rem(290px);
+    left: rem(-9999px);
     color: #1E1F20;
-    font-size: 16px;
+    font-size: rem(16px);
     font-weight: 500;
     opacity: 0.8;
     transition: opacity 1s;
-    border-radius: 4px;
-    margin-top: -92px;
-    margin-left: 90px;
+    border-radius: rem(4px);
+    margin-top: rem(-92px);
+    margin-left: rem(90px);
   }
 
   &__item {
     display: flex;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: rem(8px);
 
     &:last-child {
       margin-bottom: 0;
@@ -72,15 +76,15 @@
   }
 
   &__desc {
-    margin-left: 12px;
+    margin-left: rem(12px);
     color: black;
-    font-size: 16px;
+    font-size: rem(16px);
     font-weight: 700;
   }
 
   &__data {
     flex: 1;
-    margin-left: 26px;
+    margin-left: rem(26px);
     text-align: end;
     color: black;
   }

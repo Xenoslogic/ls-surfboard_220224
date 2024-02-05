@@ -1,23 +1,30 @@
 .contacts {
+  @include phones {
+    margin-bottom: rem(10px);
+  }
 
   &--footer {
     display: flex;
     align-items: start;
     flex-direction: column;
 
+    @include phones {
+      align-items: center;
+    }
   }
 
   &__address {
-    font-size: 21px;
+    font-size: rem(21px);
   }
 
   &__phone-icon {
+    padding-top: rem(5px);
     flex-shrink: 0;
 
     &-img {
-      width: 18px;
-      height: 18px;
-      margin-right: 6px;
+      width: rem(18px);
+      height: rem(18px);
+      margin-right: rem(6px);
       fill: white;
 
       &--black {
@@ -34,7 +41,7 @@
       flex: 1;
       font-style: normal;
       font-weight: bold;
-      font-size: 22px;
+      font-size: rem(22px);
       white-space: nowrap;
 
       &--footer {

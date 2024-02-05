@@ -2,7 +2,9 @@
   display: flex;
   justify-content: space-between;
 
-
+  @include tablets {
+    display: none;
+  }
 
   .team__content {
     position: absolute;
@@ -19,26 +21,46 @@
 .team--version--mobile {
   display: none;
 
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
 }
 
 .team {
   &-title {
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
   }
 
   &__item {
     text-align: center;
     position: relative;
     width: 220px;
+
+    @include tablets {
+      margin-bottom: rem(16px);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &.active .team__title {
+      @include tablets {
+        margin-bottom: 15px;
+      }
+    }
   }
 
   &__member {
-    margin-bottom: 21px;
+    margin-bottom: rem(21px);
   }
 
   &__title {
-    font-size: 21px;
+    font-size: rem(21px);
     font-weight: bold;
     position: relative;
 
@@ -47,9 +69,9 @@
       display: inline-block;
       width: 12px;
       height: 12px;
-      margin-left: 4px;
+      margin-left: rem(4px);
       position: absolute;
-      top: -2px;
+      top: rem(-2px);
     }
 
     &.active::after {
@@ -67,5 +89,8 @@
   &__position {
     color: black;
 
+    @include tablets {
+      font-weight: bold;
+    }
   }
 }

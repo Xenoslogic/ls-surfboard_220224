@@ -1,7 +1,7 @@
 @mixin inherit_menu {
   width: 100%;
   background-color: $blue;
-  padding: 26px 30px;
+  padding: rem(26px) rem(30px);
   align-items: center;
 }
 
@@ -10,5 +10,19 @@
   justify-content: space-between;
   align-items: flex-start;
 
+  @include tablets {
+    @include inherit_menu;
+  }
 
+  @include phones {
+    @include inherit_menu;
+    padding: rem(26px) rem(10px);
+  }
+
+}
+
+.contacts.header__contacts {
+  @include tablets {
+    display: none;
+  }
 }

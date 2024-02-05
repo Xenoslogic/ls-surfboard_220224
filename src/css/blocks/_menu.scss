@@ -1,21 +1,24 @@
 .menu {
 
+  @include tablets {
+    display: none;
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    margin: 0px 30px;
-    padding-top: 5px;
+    margin: rem(0px) rem(30px);
   }
 
   &__item {
-    margin-right: 20px;
-    margin-bottom: 10px;
+    margin-right: rem(20px);
+    margin-bottom: rem(10px);
 
     &:last-child {
-      margin-right: 0px;
+      margin-right: rem(0px);
     }
   }
 

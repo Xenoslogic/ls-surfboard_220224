@@ -5,8 +5,11 @@
   background-position: center top -0px;
   filter: grayscale(0%);
   overflow: hidden;
-  padding: 60px 0px;
+  padding: rem(60px) rem(0px);
 
+  @include tablets {
+    padding: 0;
+  }
 }
 
 .order--title {
